@@ -28,8 +28,13 @@ The Bastion Host will act as the EKS client. Install the following tools on the 
 * Make sure the MySQL instance allows **port 3306** from the Bastion host.
 
 ### Connect to MySQL
+install mysql 
 ```bash
-mysql -h expense-dev.czn6yzxlcsiv.us-east-1.rds.amazonaws.com -u root -pExpenseApp1
+sudo dnf install mysql -y 
+```
+
+```bash
+mysql -h expense-dev.cj8cuccukocn.us-east-1.rds.amazonaws.com -u root -pExpenseApp1
 ```
 
 ### Create Table and User
